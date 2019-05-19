@@ -15,10 +15,12 @@
     -->
     
     <select id="selectBoard" resultType="boardDTO">
-        SELECT * FROM BOARD ORDER BY #{duedate}
+        SELECT * FROM BOARD ORDER BY duedate, priority DESC
     </select>
     
-
+	<insert id="insertBoard">
+		INSERT INTO BOARD(title, content, duedate, userid) VALUES (#{title}, #{content}, #{duedate}, #{userid});
+	</insert>
 
     
 </mapper>

@@ -98,7 +98,7 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
             <h4 class="modal-title">일정 추가</h4>
           </div>
           <div class="modal-body">
-            <form class="form-horizontal" action="/action_page.php">
+            <form class="form-horizontal" action="${pageContext.request.contextPath}/board" method="POST">
               <div class="form-group">
                 <label class="control-label col-sm-2" for="title">title : </label>
                 <div class="col-sm-10">
@@ -108,13 +108,13 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
               <div class="form-group">
                 <label for="date" class="control-label col-sm-2">due date:</label>
                 <div class="col-sm-10">
-                  <input class="form-control" type="datetime-local" id="date">
+                  <input class="form-control" type="datetime-local" id="date" name="duedate">
                 </div>
               </div>
               <div class="form-group">
                 <label class="control-label col-sm-2" for="content">content :</label>
                 <div class="col-sm-10">
-                  <textarea class="form-control" rows="5" id="content" placeholder="Enter Content"></textarea>
+                  <textarea class="form-control" rows="5" id="content" name="content" placeholder="Enter Content"></textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -131,6 +131,10 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
 <!-- To Do List  -->
+
+
+
+
 <script>
 var boardList = new Array;
 <c:forEach  var="board" items="${boardList}">
@@ -197,21 +201,6 @@ for (var i = 0; i < boardList.length; i++) {
 
 </script>
   
-<%-- 
-<c:forEach  var="board" items="${boardList}">
-	<tr>
-		<td>${board.no}</td>
-		<td>
-			<c:if test="${board.priority < 1}">
-				<span style="color:red;">( ${board.priority} )</span>
-			</c:if>   
-		</td>
-		<td>${board.title}</td>
-		<td><fmt:formatDate value="${board.duedate}" pattern="yyyy-MM-dd"/>
-		</td>
-	</tr>
-</c:forEach>
- --%>
 
 <!-- Group (Date 기준) -->
     <div class="panel-group" id="accordion"

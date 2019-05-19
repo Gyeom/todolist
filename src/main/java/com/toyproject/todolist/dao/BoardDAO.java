@@ -6,4 +6,5 @@ import com.toyproject.todolist.dto.BoardDTO;
 
 public interface BoardDAO {
 	  public List<BoardDTO> selectBoard() throws Exception;
+	  public void insertBoard(BoardDTO boardDTO)  throws Exception;
 }

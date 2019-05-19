@@ -12,13 +12,18 @@ import com.toyproject.todolist.dto.BoardDTO;
 @Service
 public class BoardServiceImpl implements BoardService {
 	@Inject
-	    private BoardDAO dao;
+	    private BoardDAO boardDao;
 
 
 	@Override
 	public List<BoardDTO> selectBoard() throws Exception {
 		// TODO Auto-generated method stub
-		return dao.selectBoard();
+		return boardDao.selectBoard();
 	}
-
+	
+	@Override
+	public void insertBoard(BoardDTO boardDTO) throws Exception {
+		// TODO Auto-generated method stub
+		boardDao.insertBoard(boardDTO);
+	}
 }
