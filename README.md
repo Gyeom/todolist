@@ -35,7 +35,7 @@
  #### 방화벽에서 톰캣 포트 외부접속 
   * sudo ufw allow (톰캣 포트번호)/tcp
 
- #### 톰캣 
+ #### 톰캣 실행
   * sudo service tomcat8 start
   
  #### URL
