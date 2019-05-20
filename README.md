@@ -9,7 +9,7 @@
     * AWS EC2 & RDS
     
 ### Installation
-> Ubuntu 사용법
+> ↓ Ubuntu 사용법 ↓
 
 #### Installing Java
 
@@ -18,42 +18,42 @@
   * sudo apt-get install openjdk-8-jdk
 
  # Java 설치 확인을 위한 버전체크 
-  javac -version
-  java -version
+  * javac -version
+  * java -version
 
  # 설치된 자바 목록 
-  sudo update-alternatives --config java
+  * sudo update-alternatives --config java
 
 #### Installing Tomcat
 
  # 톰캣8 설치
-  sudo apt-get install tomcat8
+  * sudo apt-get install tomcat8
 
  # 톰캣 버전 
-  sudo /usr/share/tomcat8/bin/version.sh
+  * sudo /usr/share/tomcat8/bin/version.sh
 
  # 방화벽에서 톰캣 포트 외부접속 
-  sudo ufw allow (톰캣 포트번호)/tcp
+  * sudo ufw allow (톰캣 포트번호)/tcp
 
  # 톰캣 
-  sudo service tomcat8 start
+  * sudo service tomcat8 start
   
  # URL
-  http://우분투서버IP주소:톰캣포트번호
+  * http://우분투서버IP주소:톰캣포트번호
  
 #### Installing MySQL
 
 # MySQL 버전을 확인
- sudo apt-cache search mysql-server
+  * sudo apt-cache search mysql-server
 
 # MySQL 5.7 설치
- sudo apt-get install mysql-server-5.7
+  * sudo apt-get install mysql-server-5.7
 
 # MySQL 5.7 설치확인
- /etc/init.d/mysql status
+  * /etc/init.d/mysql status
 
 # MySQL root 계정 접속, 데이터베이스 조회
- mysql -uroot -p -e'show databases'
+  * mysql -uroot -p -e'show databases'
 
 
 ## Requirements
