@@ -6,6 +6,7 @@
     
         <typeAliases>
             <typeAlias type="com.toyproject.todolist.dto.BoardDTO" alias="boardDTO"/>
+            <typeAlias type="com.toyproject.todolist.dto.UserDTO" alias="userDTO"/>
         </typeAliases>
         
     </configuration>

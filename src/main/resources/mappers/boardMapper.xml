@@ -15,14 +15,20 @@
     -->
     
     <select id="selectBoard" resultType="boardDTO">
-        SELECT * FROM BOARD ORDER BY duedate, priority DESC
+        SELECT * FROM BOARD  WHERE userid=#{userid} ORDER BY duedate, priority DESC
     </select>
     
 	<insert id="insertBoard">
-		INSERT INTO BOARD(title, content, duedate, userid) VALUES (#{title}, #{content}, #{duedate}, #{userid});
+		INSERT INTO BOARD(title, content, duedate, userid) VALUES (#{title}, #{content}, #{duedate}, #{userid})
 	</insert>
 
-    
+    <delete id="deleteBoard">
+		delete from BOARD WHERE no=#{bno}
+	</delete>
+	
+	<update id="updateBoard">
+		UPDATE BOARD SET title=#{title}, content=#{content} WHERE no=#{no}
+	</update>
 </mapper>
 
 
