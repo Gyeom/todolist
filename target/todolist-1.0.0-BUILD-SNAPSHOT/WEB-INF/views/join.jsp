@@ -46,30 +46,6 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
   			<li><a href="${pageContext.request.contextPath}/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 		</c:otherwise>
 	</c:choose>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
-                class="glyphicon glyphicon-bullhorn"></span> Notice <span class="badge">5</span></a>
-            <ul class="dropdown-menu scrollable-menu" style="border-radius: 1rem;">
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-            </ul>
-          </li>
         </ul>
       </div>
     </div>
