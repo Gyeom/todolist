@@ -9,13 +9,13 @@
     * AWS EC2 & RDS
     
 ### Installation
-> Ubuntu 
+> Ubuntu 사용법
 
 #### Installing Java
 
  # JRE, JDK 설치
-  sudo apt-get install openjdk-8-jre
-  sudo apt-get install openjdk-8-jdk
+  * sudo apt-get install openjdk-8-jre
+  * sudo apt-get install openjdk-8-jdk
 
  # Java 설치 확인을 위한 버전체크 
   javac -version
