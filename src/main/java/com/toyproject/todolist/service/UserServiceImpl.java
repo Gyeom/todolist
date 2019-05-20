@@ -1,6 +1,5 @@
 package com.toyproject.todolist.service;
 
-import java.util.List;
 
 import javax.inject.Inject;
 

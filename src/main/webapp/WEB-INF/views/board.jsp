@@ -48,26 +48,14 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
 	</c:choose>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
-                class="glyphicon glyphicon-bullhorn"></span> Notice <span class="badge">5</span></a>
+                class="glyphicon glyphicon-bullhorn"></span> Notice <span class="badge">0</span></a>
             <ul class="dropdown-menu scrollable-menu" style="border-radius: 1rem;">
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
-              <li
-                style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
-                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li>
+            
+     <!--  기본 레이아웃   -->
+            
+       <!--         <li style="width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;">
+                <span class="glyphicon glyphicon-exclamation-sign"> </span> "강좌 신청하기" 일정이 마감되었습니다. 확인해주세요</li> -->
+     
             </ul>
           </li>
         </ul>
@@ -264,7 +252,24 @@ json.content="${board.content}";
 json.duedate=<fmt:formatDate value="${board.duedate}" pattern="yyyyMMdd"/>;
 boardList.push(json);
 </c:forEach>
+var cnt=0;
 for (var i = 0; i < boardList.length; i++) {
+ 	var date = boardList[i].duedate;
+	var yyyy= (date-date%10000)/10000;
+	var mm = (date%10000-date%100)/100;
+	var dd = date-yyyy*10000-mm*100;
+	var old = new Date(yyyy,mm,dd);
+	var now = new Date();
+	if(now.getTime()-old.getTime()>0){
+		cnt++;
+		var $notice=$("<li style='\ width:28rem; padding:1rem; border-style: solid; border-width: 0.2rem; border-color:gainsboro; border-radius: 0.5rem;'\ >"
+                +"<span class='\glyphicon glyphicon-exclamation-sign'\> </span> "+ boardList[i].title +" 일정이 마감되었습니다. 확인해주세요</li>");
+	$(".dropdown-menu").append($notice)
+	} 
+	
+	
+	
+	
 	if($("."+boardList[i].duedate).length <=0){
 		var $group=$("<div class=\'panel-group "+boardList[i].duedate+"\' id=\'accordion\' style=\'margin-bottom: 1rem; border-width: 0.2rem; border-style: solid; border-color: gainsboro; border-radius: 1rem;\'></div>");
 		$(".container").append($group);
@@ -313,7 +318,7 @@ for (var i = 0; i < boardList.length; i++) {
 	    $("."+boardList[i].duedate).append($list);
 	}
 }
-
+$(".badge").text(cnt);
 
 /* alert(JSON.stringify(boardList)); */
 

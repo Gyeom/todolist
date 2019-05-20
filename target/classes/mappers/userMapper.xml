@@ -10,7 +10,7 @@
 		where userid=#{userid} and password=#{password}	
     </select>
     
-	<insert id="insertBoard">
+	<insert id="insertUser">
 		INSERT INTO USER(userid, name, password) VALUES (#{userid}, #{name}, #{password});
 	</insert>
 

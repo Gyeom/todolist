@@ -36,12 +36,19 @@ public class UserController {
 	//µø¿€
 	
 	@RequestMapping(value = "/join.do", method = RequestMethod.POST) 
-	public String join(UserDTO userDTO) {
+	public String join(UserDTO userDTO, Model model) {
+		boolean success = false;
 		try {
-			userService.insertUser(userDTO);
+			success = userService.insertUser(userDTO);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			model.addAttribute("message", "duplicate");
+			return "join";
+		}
+		if(!success) {
+			model.addAttribute("message", "error");
+			return "join";
 		}
 		return "login"; 
 	}

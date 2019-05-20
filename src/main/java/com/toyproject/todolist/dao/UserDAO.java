@@ -1,6 +1,5 @@
 package com.toyproject.todolist.dao;
 
-import java.util.List;
 
 import com.toyproject.todolist.dto.UserDTO;
 
