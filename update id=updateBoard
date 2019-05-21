@@ -1,0 +1,102 @@
+[33mcommit 7190566a2838460b1bb473d74737fc813e7d5f24[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Tue May 21 12:25:53 2019 +0900
+
+    priority func add
+
+[33mcommit fd62dda9d72030cd0b28279737188cd3ebc7d921[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:45:08 2019 +0900
+
+    Update README.md
+
+[33mcommit cb32b586a333ad04496e71eb8f0a1bc69355ca28[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:44:29 2019 +0900
+
+    Update README.md
+
+[33mcommit 06321c924ceb1ec0d8ef45e44a56a73c43cde594[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:43:42 2019 +0900
+
+    Update README.md
+
+[33mcommit 11c3893a8a4519d4c9e68f4d2dd54bf61b7bcb78[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:42:37 2019 +0900
+
+    Update README.md
+
+[33mcommit 7a220dd4952e13bf6a033291c916380c3c39c8a9[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:41:23 2019 +0900
+
+    Update README.md
+
+[33mcommit 568a48b4cbd20db4f1761ed962915f30795c77a2[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:39:26 2019 +0900
+
+    Update README.md
+
+[33mcommit e80250404d0ea2c86c6bda5fb8b0753e62cf403a[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Tue May 21 00:38:30 2019 +0900
+
+    Update README.md
+
+[33mcommit 5579074643daa2babc48bc598b9e3bb0ca911a45[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Mon May 20 23:51:05 2019 +0900
+
+    update
+
+[33mcommit 83faa4aa7bc43f11f753f86f332d53f7153cd913[m
+Merge: 98a2ebe 7ca19ed
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Mon May 20 22:10:33 2019 +0900
+
+    Merge branch 'master' of https://github.com/Gyeom/todolist
+
+[33mcommit 98a2ebed39da63e3fcde16f29024daf5f63cf655[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Mon May 20 22:09:49 2019 +0900
+
+    notice func add
+
+[33mcommit 7ca19eda5e5a1638786d4352783e65626c9d57e3[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Mon May 20 22:06:48 2019 +0900
+
+    Update README.md
+
+[33mcommit 19ee67d2a83d007111b98278c3bd2f3d008ce3b0[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Mon May 20 20:09:35 2019 +0900
+
+    update & user func add
+
+[33mcommit f5d47779dd6a6a215ff0d64a15a82ed2d7576779[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Sun May 19 10:04:36 2019 +0900
+
+    update
+
+[33mcommit 63b574b4447f0f62191cebb74e5868e21df9fc0d[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Sun May 19 00:30:54 2019 +0900
+
+    re
+
+[33mcommit 5d54b8f72c8f680ccb3294c258255303dac90770[m
+Author: Gyeom <rlaeorua369@github.com>
+Date:   Sun May 19 00:25:13 2019 +0900
+
+    front & db select func add
+
+[33mcommit 10b9ef3a8ce6e99556c595dffa8fe11a8d1c99be[m
+Author: Daegyeom <koreatech93@naver.com>
+Date:   Sun May 19 00:10:00 2019 +0900
+
+    Initial commit
