@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.toyproject.todolist.mapper.boardMapper">
+    <!-- 
+        mybatis-config.xml의 typeAlias에 등록해두지 않았다면 
+        
+        <select id="selectMember" resultType="com.example.dto.MemberVO" >
+            SELECT ID, PW ,NAME FROM TEST
+        </select>
+        
+        이렇게 해야 한다.
+    -->
+    
+    <select id="selectBoard" resultType="boardDTO">
+        SELECT * FROM BOARD  WHERE userid=#{userid} ORDER BY duedate, priority DESC
+    </select>
+    
+	<insert id="insertBoard">
+		INSERT INTO BOARD(title, content, duedate, userid) VALUES (#{title}, #{content}, #{duedate}, #{userid})
+	</insert>
+
+    <delete id="deleteBoard">
+		delete from BOARD WHERE no=#{bno}
+	</delete>
+	
+	<update id="updateBoard">
+		UPDATE BOARD SET title=#{title}, content=#{content} WHERE no=#{no}
+	</update>
+	
+	<update id="updatePriority">
+		UPDATE BOARD SET priority=#{priority} WHERE no=#{no}
+	</update>
+</mapper>
+
+
